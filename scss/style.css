@@ -1,0 +1,131 @@
+:root {
+  --bg-gray-light: #EFEEF3;
+  --color-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kodchasan", sans-serif;
+  background-color: var(--bg-gray-light);
+}
+
+header {
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 45vh;
+}
+header .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 65px;
+  background-color: var(--bg-gray-light);
+}
+header .header-content img {
+  width: 155px;
+  height: auto;
+  padding-right: 20px;
+}
+header .header-content nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+header .header-content nav li a {
+  color: var(--color-black);
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .header-content nav li a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 980px) {
+  header {
+    background-image: none;
+  }
+  header .header-content {
+    flex-direction: column;
+  }
+  header .header-content img {
+    margin: 10px 0 20px;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+}
+
+main {
+  padding: 30px 20px;
+}
+main .main-highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+main .main-highlight img {
+  width: 450px;
+}
+main .main-highlight .highlight-info {
+  max-width: 555px;
+}
+main .main-highlight .highlight-info h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+main .main-highlight .highlight-info p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+main .favorite-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+main .favorite-products h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 30%;
+}
+main .favorite-products .product-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+@media (max-width: 980px) {
+  main .main-highlight {
+    flex-direction: column;
+    gap: 50px;
+  }
+  main .main-highlight img {
+    width: 375px;
+  }
+  main .favorite-products {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  main .favorite-products h2 {
+    text-align: center;
+    width: 100%;
+  }
+  main .favorite-products .product-images {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */
